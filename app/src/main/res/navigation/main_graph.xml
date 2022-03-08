@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/consultaFragment">
+
+    <fragment
+        android:id="@+id/consultaFragment"
+        android:name="com.example.myconsultamedica.ui.consultamedia.ConsultaFragment"
+        android:label="@string/subscriber_title"
+        tools:layout="@layout/consulta_fragment" />
+</navigation>
