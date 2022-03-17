@@ -3,7 +3,14 @@
 
     <!--Strings referente ao cadastro de usuario -->
     <string name="subscriber_name_hint">Nome Completo</string>
+    <string name="subscriber_datanasc_hint">Data Nascimento</string>
+    <string name="subscriber_fone_hint">Telefone fixo</string>
+    <string name="subscriber_celular_hint">Celular</string>
     <string name="subscriber_email_hint">E-mail</string>
+    <string name="subscriber_nomerespon_hint">Nome Responsavel</string>
+    <string name="subscriber_cpf_hint">CPF</string>
+    <string name="subscriber_senha_hint">Senha</string>
+    <string name="subscriber_senhaconfir_hint">Senha Confirmar</string>
     <string name="subscriber_button">Salvar</string>
     <string name="subscriber_title">CadastroUsuario</string>
 
