@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/consultaFragment"
         android:name="com.example.myconsultamedica.ui.consultamedia.ConsultaFragment"
-        android:label="@string/subscriber_title"
-        tools:layout="@layout/consulta_fragment" />
+        android:label="@string/paciente_title"
+        tools:layout="@layout/cadastro_paciente_fragment" />
 </navigation>

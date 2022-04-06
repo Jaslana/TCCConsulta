@@ -1,6 +1,80 @@
 <resources>
-    <string name="app_name">My ConsultaMedica</string>
+    <string name="app_name">DocTech</string>
 
+<<<<<<< HEAD
+    <!--Strings referente ao login -->
+    <string name="login_rb_medico">Médico</string>
+    <string name="login_rb_paciente">Paciente</string>
+    <string name="login_email_hint">E-mail</string>
+    <string name="login_senha_hint">Senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_cadastrar">Quero me cadastrar</string>
+
+    <!--Strings referente ao cadastro de medico -->
+    <string name="medico_cadastro_title">Cadastro de médico</string>
+    <string name="medico_name_hint">Nome Completo</string>
+    <string name="medico_logradouro_hint">Logradouro</string>
+    <string name="medico_endnumero_hint">Nº</string>
+    <string name="medico_bairro_hint">Bairro</string>
+    <string name="medico_cidade_hint">Cidade</string>
+    <string name="medico_estado_hint">Estado</string>
+    <string name="medico_cep_hint">CEP</string>
+    <string name="medico_telefone_hint">Telefone</string>
+    <string name="medico_celular_hint">Celular</string>
+    <string name="medico_email_hint">E-mail</string>
+    <string name="medico_senha_hint">Senha</string>
+    <string name="medico_senhaconfir_hint">Senha Confirmar</string>
+    <string name="medico_button">Salvar</string>
+
+    <!--Strings referente ao cadastro de paciente -->
+    <string name="paciente_cadastro_title">Cadastro de paciente</string>
+    <string name="paciente_name_hint">Nome Completo</string>
+    <string name="paciente_data_nascimento_hint">Data Nascimento</string>
+    <string name="paciente_telefone_hint">Telefone</string>
+    <string name="paciente_celular_hint">Celular</string>
+    <string name="paciente_email_hint">E-mail</string>
+    <string name="paciente_nome_responsavel_hint">Nome Completo Responsável</string>
+    <string name="paciente_nao_se_aplica_hint">Não se aplica</string>
+    <string name="paciente_cpf_hint">CPF</string>
+    <string name="paciente_senha_hint">Senha</string>
+    <string name="paciente_senhaconfir_hint">Senha Confirmar</string>
+    <string name="paciente_button">Salvar</string>
+
+    <!--Strings referente a tela principal de paciente e medico -->
+    <string name="principal_nome_paciente">Nome do paciente</string>
+    <string name="principal_nome_medico">Nome do médico</string>
+    <string name="principal_meus_dados">Meus dados</string>
+    <string name="principal_consultas">Consultas</string>
+    <string name="principal_agendamentos">Agendamentos</string>
+
+    <!--Strings referente a tela de consultas de paciente e medico -->
+    <string name="consulta_cadastrar_nova">Cadastrar nova consulta</string>
+    <string name="consulta_minhas_consultas">Minhas consultas</string>
+    <string name="consulta_filtros">Filtros</string>
+
+    <!--Strings referente a tela de agendamentos de paciente e medico -->
+    <string name="agendamentos_meus_agendamentos">Meus agendamentos</string>
+
+    <!--Strings referente a tela de agendamentos de paciente e medico -->
+    <string name="cadastro_consulta_data">Data da consulta</string>
+    <string name="cadastro_consulta_hora">Hora da consulta</string>
+    <string name="cadastro_consulta_duracao">Tempo da consulta (minutos)</string>
+    <string name="cadastro_consulta_status">Status</string>
+    <string name="cadastro_consulta_convenio">Convênio</string>
+    <string name="cadastro_consulta_valor">Valor</string>
+    <string name="cadastro_consulta_nao_se_aplica">Não se aplica</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+=======
     <!--Strings referente ao cadastro de usuario -->
     <string name="subscriber_name_hint">Nome Completo</string>
     <string name="subscriber_datanasc_hint">Data Nascimento</string>
@@ -13,5 +87,6 @@
     <string name="subscriber_senhaconfir_hint">Senha Confirmar</string>
     <string name="subscriber_button">Salvar</string>
     <string name="subscriber_title">CadastroUsuario</string>
+>>>>>>> 1242f3d99d2e7ccbbeca19e40d25fb20ed3aa566
 
 </resources>
