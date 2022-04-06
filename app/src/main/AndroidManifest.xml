@@ -10,6 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyConsultaMedica">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Cadastro_consulta_medico"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamentos_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".Agendamentos_medico"
+            android:exported="false" />
+        <activity
+            android:name=".Consultas_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".Consultas_medico"
+            android:exported="false" />
+        <activity
+            android:name=".Dados_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".Dados_medico"
+            android:exported="false" />
+        <activity
+            android:name=".Principal_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".Principal_medico"
+            android:exported="false" />
+        <activity
+            android:name=".Cadastro_medico"
+            android:exported="false" />
+        <activity
+            android:name=".Cadastro_paciente"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
