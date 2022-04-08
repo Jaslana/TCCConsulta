@@ -1,8 +1,9 @@
-package com.example.myconsultamedica
+package com.example.myconsultamedica.ui.subcriber
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.myconsultamedica.R
 
 class Cadastro_paciente : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

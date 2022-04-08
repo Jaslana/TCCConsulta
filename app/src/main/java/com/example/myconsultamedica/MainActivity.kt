@@ -7,6 +7,10 @@ import android.util.Log
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
+import com.example.myconsultamedica.ui.subcriber.Cadastro_medico
+import com.example.myconsultamedica.ui.subcriber.Cadastro_paciente
+import com.example.myconsultamedica.ui.subcriber.Principal_medico
+import com.example.myconsultamedica.ui.subcriber.Principal_paciente
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

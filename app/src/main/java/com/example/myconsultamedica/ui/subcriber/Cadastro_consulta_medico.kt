@@ -1,9 +1,10 @@
-package com.example.myconsultamedica
+package com.example.myconsultamedica.ui.subcriber
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import com.example.myconsultamedica.R
 
 class Cadastro_consulta_medico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
