@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Principal_paciente">
+    tools:context=".ui.subcriber.Principal_paciente">
 
     <TextView
         android:id="@+id/textView_paciente_nome"

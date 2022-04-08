@@ -1,22 +1,21 @@
-package com.example.myconsultamedica
+package com.example.myconsultamedica.ui.subcriber
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
 import android.widget.TextView
+import com.example.myconsultamedica.R
 
-class Principal_medico : AppCompatActivity() {
+class Principal_paciente : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_principal_medico)
+        setContentView(R.layout.activity_principal_paciente)
 
         val dadosClick = findViewById<TextView>(R.id.txt_meus_dados)
         dadosClick.setOnClickListener {
-                val intentMed = Intent(this, Dados_medico::class.java)
-                startActivity(intentMed)
+            val intentMed = Intent(this, Dados_paciente::class.java)
+            startActivity(intentMed)
         }
     }
 }

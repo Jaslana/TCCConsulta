@@ -1,14 +1,13 @@
-package com.example.myconsultamedica
+package com.example.myconsultamedica.ui.subcriber
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myconsultamedica.R
 
-class Consultas_medico : AppCompatActivity() {
+class Dados_paciente : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_consultas_medico)
-
-
+        setContentView(R.layout.activity_dados_paciente)
     }
 }
