@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cadastro_consulta_medico">
+    tools:context=".Agendar_consulta_paciente">
+
 
     <TextView
-        android:id="@+id/textView_medico_nome"
+        android:id="@+id/textView_paciente_nome"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginBottom="5dp"
         android:background="@color/rosa_cabeçalho"
         android:gravity="center"
-        android:text="@string/principal_nome_medico"
+        android:text="@string/principal_nome_paciente"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,8 +37,8 @@
         app:layout_constraintBottom_toTopOf="@id/editText_hora_consulta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_medico_nome"
-        tools:layout_editor_absoluteY="88dp" />
+        app:layout_constraintTop_toBottomOf="@id/textView_paciente_nome"
+        />
 
     <EditText
         android:id="@+id/editText_hora_consulta"
@@ -54,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editText_data_consulta"
-        tools:layout_editor_absoluteY="88dp" />
+        />
 
     <EditText
         android:id="@+id/editText_duracao_consulta"
@@ -70,128 +71,64 @@
         app:layout_constraintTop_toBottomOf="@id/editText_hora_consulta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/layout_status"
-        tools:layout_editor_absoluteY="88dp"
+        app:layout_constraintBottom_toTopOf="@id/editText_nome_medico_consulta"
         />
-    <LinearLayout
-        android:id="@+id/layout_status"
+
+    <EditText
+        android:id="@+id/editText_nome_medico_consulta"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="5dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="356dp"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="@string/principal_nome_medico"
         app:layout_constraintTop_toBottomOf="@id/editText_duracao_consulta"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/layout_convenio"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editText_convenio_consulta"
+        />
 
-        <TextView
-            android:id="@+id/labelFor_cadastro_consulta_status"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:backgroundTint="@android:color/white"
-            android:labelFor="@id/spinner_cadastro_consulta_status"
-            android:text="@string/cadastro_consulta_status"
-            android:textColor="@android:color/black"
-            android:gravity="center"/>
-
-        <Spinner
-            android:id="@+id/spinner_cadastro_consulta_status"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:ems="10"
-            android:inputType="text"
-            android:gravity="center"
-            android:spinnerMode="dropdown"/>
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/layout_convenio"
+    <EditText
+        android:id="@+id/editText_convenio_consulta"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="5dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="356dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_status"
-        app:layout_constraintStart_toStartOf="parent"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="@string/cadastro_consulta_convenio"
+        app:layout_constraintTop_toBottomOf="@id/editText_nome_medico_consulta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/layout_valor"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editText_valor_consulta"
+        />
 
-        <TextView
-            android:id="@+id/labelFor_cadastro_consulta_convenio"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:backgroundTint="@android:color/white"
-            android:gravity="center"
-            android:labelFor="@id/spinner_cadastro_consulta_convenios"
-            android:text="@string/cadastro_consulta_convenio"
-            android:textColor="@android:color/black"
-             />
-
-        <Spinner
-            android:id="@+id/spinner_cadastro_consulta_convenios"
-            android:layout_height="50dp"
-            android:layout_width="match_parent"
-            android:ems="10"
-            android:inputType="text"
-            android:spinnerMode="dropdown"
-            android:prompt="@string/principal_nome_paciente"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layout_valor"
+    <EditText
+        android:id="@+id/editText_valor_consulta"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="5dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="356dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_convenio"
-        app:layout_constraintStart_toStartOf="parent"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="@string/cadastro_consulta_valor"
+        app:layout_constraintTop_toBottomOf="@id/editText_convenio_consulta"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_medico_cadastrar"
-        >
+        />
 
 
-        <EditText
-            android:id="@+id/editText_cadastro_consulta_valor"
-            android:layout_height="50dp"
-            android:layout_width="wrap_content"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:hint="@string/cadastro_consulta_valor"
-            android:layout_gravity="fill_horizontal"
-            android:layout_weight="1"
-             />
 
-        <CheckBox
-            android:id="@+id/checkbox_valor_nao_se_aplica"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:hint="@string/cadastro_consulta_nao_se_aplica"
-            android:gravity="center"
-            android:layout_weight="0"
-            app:layout_constraintTop_toTopOf="@id/editText_cadastro_consulta_valor"
-/>
-    </LinearLayout>
+
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_medico_cadastrar"
@@ -202,16 +139,15 @@
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/bg_button_green"
-        android:text="@string/medico_button"
+        android:text="@string/agendamentos_confirmar_agendamento"
         android:textAllCaps="false"
         android:textColor="#FFFF8D"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/layout_valor"
+        app:layout_constraintTop_toBottomOf="@id/editText_valor_consulta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

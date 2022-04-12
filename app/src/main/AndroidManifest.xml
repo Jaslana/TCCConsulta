@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyConsultaMedica">
         <activity
+            android:name=".Principal_administrador"
+            android:exported="false" />
+        <activity
+            android:name=".Editar_agendamento_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".Agendar_consulta_paciente"
+            android:exported="false" />
+        <activity
+            android:name=".Editar_agendamento_medico"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity

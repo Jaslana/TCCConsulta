@@ -3,10 +3,9 @@ package com.example.myconsultamedica
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Agendamentos_paciente : AppCompatActivity() {
+class Principal_administrador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
-        setContentView(R.layout.activity_agendamentos_paciente)
+        setContentView(R.layout.activity_principal_administrador)
     }
 }

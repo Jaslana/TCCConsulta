@@ -12,14 +12,18 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1895" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_agendamentos_medico.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_agendamentos_paciente.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_cadastro_consulta_medico.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_agendar_consulta_paciente.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_cadastro_consulta_medico.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_cadastro_medico.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_cadastro_paciente.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_consultas_medico.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_consultas_paciente.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_dados_medico.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_dados_paciente.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_editar_agendamento_medico.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_editar_agendamento_paciente.xml" value="0.21" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_main.xml" value="0.24362244897959184" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_principal_administrador.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_principal_medico.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/activity_principal_paciente.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TCCConsulta/app/src/main/res/layout/cadastro_medico.xml" value="0.20416666666666666" />

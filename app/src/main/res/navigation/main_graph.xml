@@ -3,11 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/consultaFragment">
+    app:startDestination="@id/main_graph">
 
-    <fragment
-        android:id="@+id/consultaFragment"
-        android:name="com.example.myconsultamedica.ui.consultamedia.ConsultaFragment"
-        android:label="@string/paciente_title"
-        tools:layout="@layout/cadastro_paciente_fragment" />
+
 </navigation>
