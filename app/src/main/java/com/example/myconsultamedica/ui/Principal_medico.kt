@@ -1,4 +1,4 @@
-package com.example.myconsultamedica.ui.subcriber
+package com.example.myconsultamedica.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,27 +6,27 @@ import android.os.Bundle
 import android.widget.TextView
 import com.example.myconsultamedica.R
 
-class Principal_paciente : AppCompatActivity() {
+class Principal_medico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_principal_paciente)
+        setContentView(R.layout.activity_principal_medico)
 
         val dadosClick = findViewById<TextView>(R.id.txt_meus_dados)
         dadosClick.setOnClickListener {
-            val intentPacDados = Intent(this, Dados_paciente::class.java)
-            startActivity(intentPacDados)
+                val intentMedDados = Intent(this, Dados_medico::class.java)
+                startActivity(intentMedDados)
         }
 
         val consultasClick = findViewById<TextView>(R.id.txt_consultas)
         consultasClick.setOnClickListener {
-            val intentPacConsultas = Intent(this, Consultas_paciente::class.java)
-            startActivity(intentPacConsultas)
+            val intentMedConsultas = Intent(this, Consultas_medico::class.java)
+            startActivity(intentMedConsultas)
         }
 
         val agendamentosClick = findViewById<TextView>(R.id.txt_agendamentos)
         agendamentosClick.setOnClickListener {
-            val intentPacAgendamentos = Intent(this, Agendamentos_paciente::class.java)
-            startActivity(intentPacAgendamentos)
+            val intentMedAgendamentos = Intent(this, Agendamentos_medico::class.java)
+            startActivity(intentMedAgendamentos)
         }
     }
 }

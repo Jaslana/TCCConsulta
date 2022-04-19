@@ -1,7 +1,8 @@
-package com.example.myconsultamedica
+package com.example.myconsultamedica.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myconsultamedica.R
 
 class Principal_administrador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

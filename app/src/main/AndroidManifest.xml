@@ -10,61 +10,61 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyConsultaMedica">
         <activity
-            android:name=".Cadastrados_pacientes_administrador"
+            android:name=".ui.Cadastrados_pacientes_administrador"
             android:exported="false" />
         <activity
-            android:name=".Cadastrados_medicos_administrador"
+            android:name=".ui.Cadastrados_medicos_administrador"
             android:exported="false" />
         <activity
-            android:name=".Principal_administrador"
+            android:name=".ui.Principal_administrador"
             android:exported="false" />
         <activity
-            android:name=".Editar_agendamento_paciente"
+            android:name=".ui.Editar_agendamento_paciente"
             android:exported="false" />
         <activity
-            android:name=".Agendar_consulta_paciente"
+            android:name=".ui.Agendar_consulta_paciente"
             android:exported="false" />
         <activity
-            android:name=".Editar_agendamento_medico"
+            android:name=".ui.Editar_agendamento_medico"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Cadastro_consulta_medico"
+            android:name=".ui.Cadastro_consulta_medico"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Agendamentos_paciente"
+            android:name=".ui.Agendamentos_paciente"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Agendamentos_medico"
+            android:name=".ui.Agendamentos_medico"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Consultas_paciente"
+            android:name=".ui.Consultas_paciente"
             android:exported="false" />
         <activity
             android:name=".ui.subcriber.Consultas_medico"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Dados_paciente"
+            android:name=".ui.Dados_paciente"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Dados_medico"
+            android:name=".ui.Dados_medico"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Principal_paciente"
+            android:name=".ui.Principal_paciente"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Principal_medico"
+            android:name=".ui.Principal_medico"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Cadastro_medico"
+            android:name=".ui.Cadastro_medico"
             android:exported="false" />
         <activity
-            android:name=".ui.subcriber.Cadastro_paciente"
+            android:name=".ui.Cadastro_paciente"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

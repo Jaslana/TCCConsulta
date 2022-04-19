@@ -1,4 +1,4 @@
-package com.example.myconsultamedica.ui.subcriber
+package com.example.myconsultamedica.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
