@@ -1,9 +1,10 @@
-package com.example.myconsultamedica
+package com.example.myconsultamedica.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.myconsultamedica.R
 
 class Consultas_medico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

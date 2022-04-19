@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.subcriber.Consultas_medico">
+    tools:context=".ui.Consultas_medico">
 
     <TextView
         android:id="@+id/textView_medico_nome"
