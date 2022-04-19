@@ -15,7 +15,6 @@ import com.example.myconsultamedica.ui.subcriber.Principal_paciente
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
         val btMedico = findViewById<RadioButton>(R.id.rb_medico)

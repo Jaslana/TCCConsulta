@@ -39,22 +39,37 @@
     <string name="paciente_senhaconfir_hint">Senha Confirmar</string>
     <string name="paciente_button">Salvar</string>
 
-    <!--Strings referente a tela principal de paciente e medico -->
+    <!--Strings referente a tela principal de paciente, medico e admin-->
     <string name="principal_nome_paciente">Nome do paciente</string>
     <string name="principal_nome_medico">Nome do médico</string>
+    <string name="principal_nome_administrador">Nome administrador</string>
+    <string name="principal_medicos_administrador">Médicos</string>
+    <string name="principal_pacientes_administrador">Pacientes</string>
     <string name="principal_meus_dados">Meus dados</string>
     <string name="principal_consultas">Consultas</string>
     <string name="principal_agendamentos">Agendamentos</string>
 
+    <!--Strings referente a telas de listagem de medicos e pacientes para administrador -->
+    <string name="administrador_medicos_cadastrados">Médicos cadastrados</string>
+    <string name="administrador_pacientes_cadastrados">Pacientes cadastrados</string>
+
     <!--Strings referente a tela de consultas de paciente e medico -->
     <string name="consulta_cadastrar_nova">Cadastrar nova consulta</string>
     <string name="consulta_minhas_consultas">Minhas consultas</string>
+    <string name="consulta_consultas_disponiveis">Consultas disponíveis</string>
     <string name="consulta_filtros">Filtros</string>
 
     <!--Strings referente a tela de agendamentos de paciente e medico -->
     <string name="agendamentos_meus_agendamentos">Meus agendamentos</string>
+    <string name="agendamentos_data_agendamento">Data do agendamento</string>
+    <string name="agendamentos_hora_agendamento">Hora do agendamento</string>
+    <string name="agendamentos_paciente_agendamento">Nome do paciente</string>
+    <string name="agendamentos_status_agendamento">Status do agendamento</string>
+    <string name="agendamentos_comentario_agendamento">Comentário</string>
+    <string name="agendamentos_confirmar_agendamento">Confirmar agendamento</string>
 
-    <!--Strings referente a tela de agendamentos de paciente e medico -->
+
+    <!--Strings referente a tela de consultas de paciente e medico -->
     <string name="cadastro_consulta_data">Data da consulta</string>
     <string name="cadastro_consulta_hora">Hora da consulta</string>
     <string name="cadastro_consulta_duracao">Tempo da consulta (minutos)</string>
@@ -63,29 +78,19 @@
     <string name="cadastro_consulta_valor">Valor</string>
     <string name="cadastro_consulta_nao_se_aplica">Não se aplica</string>
 
-    <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+    <string-array name="status_consulta">
+        <item>Disponível</item>
+        <item>Indisponível</item>
     </string-array>
-=======
-    <!--Strings referente ao cadastro de usuario -->
-    <string name="subscriber_name_hint">Nome Completo</string>
-    <string name="subscriber_datanasc_hint">Data Nascimento</string>
-    <string name="subscriber_fone_hint">Telefone fixo</string>
-    <string name="subscriber_celular_hint">Celular</string>
-    <string name="subscriber_email_hint">E-mail</string>
-    <string name="subscriber_nomerespon_hint">Nome Responsavel</string>
-    <string name="subscriber_cpf_hint">CPF</string>
-    <string name="subscriber_senha_hint">Senha</string>
-    <string name="subscriber_senhaconfir_hint">Senha Confirmar</string>
-    <string name="subscriber_button">Salvar</string>
-    <string name="subscriber_title">CadastroUsuario</string>
->>>>>>> 1242f3d99d2e7ccbbeca19e40d25fb20ed3aa566
+
+    <string-array name="convenios_consulta">
+        <item>Particular</item>
+        <item>Unimed</item>
+        <item>Cassi</item>
+        <item>Cartão para Todos</item>
+        <item>Iamsp</item>
+        <item>Funcesp</item>
+    </string-array>
+
 
 </resources>

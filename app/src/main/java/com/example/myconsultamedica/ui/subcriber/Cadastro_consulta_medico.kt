@@ -9,20 +9,20 @@ import com.example.myconsultamedica.R
 class Cadastro_consulta_medico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
         setContentView(R.layout.activity_cadastro_consulta_medico)
 
-        val spinner = findViewById<Spinner>(R.id.spinner_cadastro_consulta_status)
-// Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.planets_array,
-            android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
+        val spinnerConsultaStatus = findViewById<Spinner>(R.id.spinner_cadastro_consulta_status)
+        ArrayAdapter.createFromResource(this, R.array.status_consulta,android.R.layout.simple_spinner_item)
+            .also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            spinner.adapter = adapter
+                spinnerConsultaStatus.adapter = adapter
         }
+
+        val spinnerConsultaConvenio = findViewById<Spinner>(R.id.spinner_cadastro_consulta_convenios)
+        ArrayAdapter.createFromResource(this, R.array.convenios_consulta,android.R.layout.simple_spinner_item)
+            .also { adapter ->
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+                spinnerConsultaConvenio.adapter = adapter
+            }
     }
 }

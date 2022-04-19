@@ -51,11 +51,16 @@
         android:layout_marginBottom="18dp"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:text="@string/consulta_minhas_consultas"
+        android:text="@string/consulta_consultas_disponiveis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_filtros_consulta" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="546dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="184dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
