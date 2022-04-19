@@ -8,7 +8,6 @@ import android.widget.Spinner
 class Cadastro_consulta_medico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
         setContentView(R.layout.activity_cadastro_consulta_medico)
 
         val spinnerConsultaStatus = findViewById<Spinner>(R.id.spinner_cadastro_consulta_status)

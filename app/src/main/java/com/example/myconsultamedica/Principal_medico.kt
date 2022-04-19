@@ -10,7 +10,6 @@ import android.widget.TextView
 class Principal_medico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
         setContentView(R.layout.activity_principal_medico)
 
         val dadosClick = findViewById<TextView>(R.id.txt_meus_dados)

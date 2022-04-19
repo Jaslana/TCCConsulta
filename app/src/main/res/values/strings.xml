@@ -49,9 +49,14 @@
     <string name="principal_consultas">Consultas</string>
     <string name="principal_agendamentos">Agendamentos</string>
 
+    <!--Strings referente a telas de listagem de medicos e pacientes para administrador -->
+    <string name="administrador_medicos_cadastrados">Médicos cadastrados</string>
+    <string name="administrador_pacientes_cadastrados">Pacientes cadastrados</string>
+
     <!--Strings referente a tela de consultas de paciente e medico -->
     <string name="consulta_cadastrar_nova">Cadastrar nova consulta</string>
     <string name="consulta_minhas_consultas">Minhas consultas</string>
+    <string name="consulta_consultas_disponiveis">Consultas disponíveis</string>
     <string name="consulta_filtros">Filtros</string>
 
     <!--Strings referente a tela de agendamentos de paciente e medico -->

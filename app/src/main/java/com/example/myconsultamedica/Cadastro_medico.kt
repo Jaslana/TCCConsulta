@@ -9,7 +9,6 @@ class Cadastro_medico : AppCompatActivity() {
         Log.d("DEBUG","MED BEFORE CREATE")
         super.onCreate(savedInstanceState)
         Log.d("DEBUG","MED AFTER CREATE")
-        supportActionBar?.hide()
         setContentView(R.layout.activity_cadastro_medico)
 
         Log.d("DEBUG","PAREI AQUI")

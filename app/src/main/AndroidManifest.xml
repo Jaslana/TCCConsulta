@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyConsultaMedica">
         <activity
+            android:name=".Cadastrados_pacientes_administrador"
+            android:exported="false" />
+        <activity
+            android:name=".Cadastrados_medicos_administrador"
+            android:exported="false" />
+        <activity
             android:name=".Principal_administrador"
             android:exported="false" />
         <activity

@@ -8,7 +8,6 @@ import android.widget.TextView
 class Consultas_medico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
         setContentView(R.layout.activity_consultas_medico)
 
         val cadConsultaClick = findViewById<TextView>(R.id.txt_cadastrar_consulta)
