@@ -1,5 +1,6 @@
 package com.example.myconsultamedica.ui
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +9,12 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
 import com.example.myconsultamedica.R
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,12 +29,12 @@ class MainActivity : AppCompatActivity() {
             Log.d("DEBUG","CLICK")
             if (btMedico.isChecked){
                 Log.d("DEBUG","MEDICO")
-                val intentMed = Intent(this, Cadastro_medico::class.java)
+                val intentMed = Intent(this, Cadastrados_medicos_administrador::class.java)
                 startActivity(intentMed)
             }
             if(btPaciente.isChecked){
                 Log.d("DEBUG","PACIENTE")
-                val intentPac = Intent(this, Cadastro_paciente::class.java)
+                val intentPac = Intent(this, Cadastrados_pacientes_administrador::class.java)
                 startActivity(intentPac)
             }
         }
@@ -46,6 +53,25 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intentPac)
             }
         }
+        // Write a message to the database
+        val database = Firebase.database
+        val myRef = database.getReference("message")
+
+        myRef.setValue("Hello, World!")
+
+        myRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                val value = dataSnapshot.getValue<String>()
+                Log.d(TAG, "Value is: $value")
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                // Failed to read value
+                Log.w(TAG, "Failed to read value.", error.toException())
+            }
+        })
 
     }
 
