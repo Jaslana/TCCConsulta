@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myconsultamedica.R
 
-class Cadastrados_medicos_administrador : AppCompatActivity() {
+class CadastradosMedicosAdministrador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastrados_medicos_administrador)

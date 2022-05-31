@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myconsultamedica.R
 
-class Consultas_paciente : AppCompatActivity() {
+class PrincipalAdministrador : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_consultas_paciente)
-
-
+        setContentView(R.layout.activity_principal_administrador)
     }
 }

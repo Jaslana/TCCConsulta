@@ -11,52 +11,55 @@
         android:theme="@style/Theme.MyConsultaMedica" >
 
         <activity
-            android:name=".ui.Cadastrados_pacientes_administrador"
+            android:name=".ui.CadastradosPacientesAdministrador"
             android:exported="false" />
         <activity
-            android:name=".ui.Cadastrados_medicos_administrador"
+            android:name=".ui.CadastradosMedicosAdministrador"
             android:exported="false" />
         <activity
-            android:name=".ui.Principal_administrador"
+            android:name=".ui.PrincipalAdministrador"
             android:exported="false" />
         <activity
-            android:name=".ui.Editar_agendamento_paciente"
+            android:name=".ui.EditarAgendamentoPaciente"
             android:exported="false" />
         <activity
-            android:name=".ui.Agendar_consulta_paciente"
+            android:name=".ui.AgendarConsultaPaciente"
             android:exported="false" />
         <activity
-            android:name=".ui.Editar_agendamento_medico"
+            android:name=".ui.EditarAgendamentoMedico"
             android:exported="false" />
         <activity
-            android:name=".ui.Cadastro_consulta_medico"
+            android:name=".ui.CadastroConsultaMedico"
             android:exported="false" />
         <activity
-            android:name=".ui.Agendamentos_paciente"
+            android:name=".ui.AgendamentosPaciente"
             android:exported="false" />
         <activity
-            android:name=".ui.Agendamentos_medico"
+            android:name=".ui.AgendamentosMedico"
             android:exported="false" />
         <activity
-            android:name=".ui.Consultas_paciente"
+            android:name=".ui.ConsultasPaciente"
             android:exported="false" />
         <activity
-            android:name=".ui.Dados_paciente"
+            android:name=".ui.ConsultasMedico"
             android:exported="false" />
         <activity
-            android:name=".ui.Dados_medico"
+            android:name=".ui.DadosPaciente"
             android:exported="false" />
         <activity
-            android:name=".ui.Principal_paciente"
+            android:name=".ui.DadosMedico"
             android:exported="false" />
         <activity
-            android:name=".ui.Principal_medico"
+            android:name=".ui.PrincipalPaciente"
             android:exported="false" />
         <activity
-            android:name=".ui.Cadastro_medico"
+            android:name=".ui.PrincipalMedico"
             android:exported="false" />
         <activity
-            android:name=".ui.Cadastro_paciente"
+            android:name=".ui.CadastroMedico"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CadastroPaciente"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Consultas_paciente">
+    tools:context=".ui.ConsultasPaciente">
 
     <TextView
         android:id="@+id/textView_paciente_nome"
@@ -44,7 +44,7 @@
         />
 
     <TextView
-        android:id="@+id/textView_minhas_consultas"
+        android:id="@+id/textView_consultas_disponiveis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
@@ -57,10 +57,17 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_filtros_consulta" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="546dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="184dp" />
-
+        android:id="@+id/rv_consultas_paciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_consultas_disponiveis"
+        tools:itemCount="5"
+        tools:listitem="@layout/card_view_consultas_paciente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
