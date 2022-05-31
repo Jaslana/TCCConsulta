@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Consultas_medico">
+    tools:context=".ui.ConsultasMedico">
 
     <TextView
         android:id="@+id/textView_medico_nome"
@@ -50,13 +50,25 @@
         android:layout_marginTop="18dp"
         android:layout_marginBottom="18dp"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:text="@string/consulta_minhas_consultas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_cadastrar_consulta" />
 
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_consultas_medico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_minhas_consultas"
+        tools:itemCount="5"
+        tools:listitem="@layout/card_view_consultas_medico" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

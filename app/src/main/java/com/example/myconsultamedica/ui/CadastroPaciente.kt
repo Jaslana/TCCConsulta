@@ -2,11 +2,14 @@ package com.example.myconsultamedica.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.myconsultamedica.R
 
-class Dados_medico : AppCompatActivity() {
+class CadastroPaciente : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d("DEBUG","PAC BEFORE CREATE")
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dados_medico)
+        Log.d("DEBUG","PAC AFTER CREATE")
+        setContentView(R.layout.activity_cadastro_paciente)
     }
 }

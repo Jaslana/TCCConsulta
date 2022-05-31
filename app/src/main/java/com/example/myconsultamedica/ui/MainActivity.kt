@@ -29,12 +29,12 @@ class MainActivity : AppCompatActivity() {
             Log.d("DEBUG","CLICK")
             if (btMedico.isChecked){
                 Log.d("DEBUG","MEDICO")
-                val intentMed = Intent(this, Cadastrados_medicos_administrador::class.java)
+                val intentMed = Intent(this, CadastroMedico::class.java)
                 startActivity(intentMed)
             }
             if(btPaciente.isChecked){
                 Log.d("DEBUG","PACIENTE")
-                val intentPac = Intent(this, Cadastrados_pacientes_administrador::class.java)
+                val intentPac = Intent(this, CadastroPaciente::class.java)
                 startActivity(intentPac)
             }
         }
@@ -44,12 +44,12 @@ class MainActivity : AppCompatActivity() {
             Log.d("DEBUG","CLICK")
             if (btMedico.isChecked){
                 Log.d("DEBUG","MEDICO")
-                val intentMed = Intent(this, Principal_medico::class.java)
+                val intentMed = Intent(this, PrincipalMedico::class.java)
                 startActivity(intentMed)
             }
             if(btPaciente.isChecked){
                 Log.d("DEBUG","PACIENTE")
-                val intentPac = Intent(this, Principal_paciente::class.java)
+                val intentPac = Intent(this, PrincipalPaciente::class.java)
                 startActivity(intentPac)
             }
         }

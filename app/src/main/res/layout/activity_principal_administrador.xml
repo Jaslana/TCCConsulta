@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Principal_administrador">
+    tools:context=".ui.PrincipalAdministrador">
 
     <TextView
         android:id="@+id/textView_administrador_nome"
@@ -70,22 +70,23 @@
         android:id="@+id/txt_consultas"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="9dp"
         android:layout_marginStart="18dp"
+        android:layout_marginTop="9dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="9dp"
         android:background="@drawable/bg_button_blue"
+        android:gravity="center"
         android:text="@string/principal_consultas"
         android:textAlignment="center"
-        android:gravity="center"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/txt_pacientes"
+        app:layout_constraintBottom_toTopOf="@+id/txt_agendamentos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/txt_agendamentos"/>
+        app:layout_constraintTop_toBottomOf="@+id/txt_pacientes" />
 
     <TextView
         android:id="@+id/txt_agendamentos"

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/bg_medico_view_model">
+
+        <TextView
+            android:id="@+id/tv_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@id/btn_edit"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Consulta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_medico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/tv_consulta"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/btn_edit"
+            android:text="Médico"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_especialidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/tv_medico"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/btn_edit"
+            android:text="Especialidade"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_data_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/tv_especialidade"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/btn_edit"
+            android:text="Data"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_hora_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/tv_data_consulta"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@id/btn_edit"
+            android:text="Hora"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Edit"
+            android:background="@android:color/transparent"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

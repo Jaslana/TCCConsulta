@@ -6,7 +6,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import com.example.myconsultamedica.R
 
-class Cadastro_consulta_medico : AppCompatActivity() {
+class CadastroConsultaMedico : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro_consulta_medico)
