@@ -3,6 +3,7 @@ package com.example.myconsultamedica.ui
 data class MedicosModel (
 
     var medId: String? = null,
+    var medNome: String? = null,
     var medLoug: String? = null,
     var medNumCasa: String? = null,
     var medBairro: String? = null,

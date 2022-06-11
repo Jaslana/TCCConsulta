@@ -112,7 +112,7 @@ class CadastroMedico : AppCompatActivity() {
 
         val medId = dbRefb.push().key!!
 
-        val medicos = MedicosModel(medId, medLoug, medNumCasa, medBairro, medCidade, medEstado, medCep, medFone, medCel, medEmail, medSenha, medSenhaConf)
+        val medicos = MedicosModel(medId, medNome, medLoug, medNumCasa, medBairro, medCidade, medEstado, medCep, medFone, medCel, medEmail, medSenha, medSenhaConf)
 
         dbRefb.child(medId).setValue(medicos)
             .addOnCanceledListener {
