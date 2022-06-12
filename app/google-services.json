@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "724981506917",
-    "project_id": "doctech-tg",
-    "storage_bucket": "doctech-tg.appspot.com"
+    "project_number": "162777596270",
+    "firebase_url": "https://medicospacientes-3771e-default-rtdb.firebaseio.com",
+    "project_id": "medicospacientes-3771e",
+    "storage_bucket": "medicospacientes-3771e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:724981506917:android:190ed961ea4096de6f378c",
+        "mobilesdk_app_id": "1:162777596270:android:c4056b411077c4e339417f",
         "android_client_info": {
           "package_name": "com.example.myconsultamedica"
         }
       },
       "oauth_client": [
         {
-          "client_id": "724981506917-f04514m15df4ojgtq7dnnkgshs96cupe.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.myconsultamedica",
-            "certificate_hash": "aaeb54f21c3ba659a2de3f9c29ae3edd9fdb1eea"
-          }
-        },
-        {
-          "client_id": "724981506917-m4ggdu4h5vd2uba9sqdmaiov0f4ggmau.apps.googleusercontent.com",
+          "client_id": "162777596270-hm4p347rfbma1d3mnjc85umuadqjift3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCnx40aiFtlgoFIS8rF2zWYfZG-4LjKLkA"
+          "current_key": "AIzaSyA4uoHaZ9xAZhOX2wutUXgjS_ptlI_bZXc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "724981506917-m4ggdu4h5vd2uba9sqdmaiov0f4ggmau.apps.googleusercontent.com",
+              "client_id": "162777596270-hm4p347rfbma1d3mnjc85umuadqjift3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
