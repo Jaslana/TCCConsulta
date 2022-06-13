@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "162777596270",
-    "firebase_url": "https://medicospacientes-3771e-default-rtdb.firebaseio.com",
-    "project_id": "medicospacientes-3771e",
-    "storage_bucket": "medicospacientes-3771e.appspot.com"
+    "project_number": "417464403723",
+    "project_id": "consultamedica-b5a12",
+    "storage_bucket": "consultamedica-b5a12.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:162777596270:android:c4056b411077c4e339417f",
+        "mobilesdk_app_id": "1:417464403723:android:cf3af2b050b4ef6d82040e",
         "android_client_info": {
           "package_name": "com.example.myconsultamedica"
         }
       },
       "oauth_client": [
         {
-          "client_id": "162777596270-hm4p347rfbma1d3mnjc85umuadqjift3.apps.googleusercontent.com",
+          "client_id": "417464403723-pj96322oh124hqpt3aa66hkepp5b9t94.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4uoHaZ9xAZhOX2wutUXgjS_ptlI_bZXc"
+          "current_key": "AIzaSyAIomyptmmd-v_w-QBVG393bDHTvYkVgzM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "162777596270-hm4p347rfbma1d3mnjc85umuadqjift3.apps.googleusercontent.com",
+              "client_id": "417464403723-pj96322oh124hqpt3aa66hkepp5b9t94.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -114,7 +114,7 @@ class CadastroMedico : AppCompatActivity() {
         val medicos = MedicosModel(medId, medNome, medLoug, medNumCasa, medBairro, medCidade, medEstado, medCep, medFone, medCel, medEmail, medSenha, medSenhaConf)
 
         dbRefb.child(medId).setValue(medicos)
-            .addOnCanceledListener {
+            .addOnCompleteListener {
                 Toast.makeText(this, "Dados salvo com sucesso", Toast.LENGTH_LONG).show()
             }.addOnFailureListener{err ->
                 Toast.makeText(this, "Flaha ${err.message}", Toast.LENGTH_LONG).show()

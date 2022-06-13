@@ -9,9 +9,7 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
 import com.example.myconsultamedica.R
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
@@ -24,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         val btMedico = findViewById<RadioButton>(R.id.rb_medico)
         val btPaciente = findViewById<RadioButton>(R.id.rb_paciente)
         val cadastroClick = findViewById<TextView>(R.id.txt_cadastrar_usuario)
+
+        val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
 
         cadastroClick.setOnClickListener {
             Log.d("DEBUG","CLICK")
