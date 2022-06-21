@@ -12,6 +12,7 @@
     <!--Strings referente ao cadastro de medico -->
     <string name="medico_cadastro_title">Cadastro de médico</string>
     <string name="medico_name_hint">Nome Completo</string>
+    <string name="medico_especialidade_hint">Especialidade</string>
     <string name="medico_logradouro_hint">Logradouro</string>
     <string name="medico_endnumero_hint">Nº</string>
     <string name="medico_bairro_hint">Bairro</string>

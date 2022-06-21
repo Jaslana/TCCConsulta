@@ -36,8 +36,6 @@ class AdapterAgendamentosMedico (private var c: Context, private val mList: List
         // sets the image to the imageview from our itemHolder class
         holder.imgEdit.setImageResource(ItemsViewModel.edit)
 
-
-
         holder.imgEdit.setOnClickListener {
         var editAgendMedIntent = Intent(c,EditarAgendamentoMedico::class.java)
             editAgendMedIntent.putExtra("nomePaciente", ItemsViewModel.paciente)

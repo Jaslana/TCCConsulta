@@ -27,7 +27,7 @@ class AgendamentosPaciente : AppCompatActivity() {
         }
 
         // This will pass the ArrayList to our Adapter
-        val adapter = AdapterAgendamentosPaciente(data)
+        val adapter = AdapterAgendamentosPaciente(this,data)
 
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
