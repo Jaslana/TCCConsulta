@@ -1,5 +1,7 @@
 package com.example.myconsultamedica.ui
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myconsultamedica.R
 
-class AdapterAgendamentosPaciente (private val mList: List<ViewModelAgendamentosPaciente>) : RecyclerView.Adapter<AdapterAgendamentosPaciente.ViewHolder>() {
+class AdapterAgendamentosPaciente (private var c: Context, private val mList: List<ViewModelAgendamentosPaciente>) : RecyclerView.Adapter<AdapterAgendamentosPaciente.ViewHolder>() {
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -33,6 +35,12 @@ class AdapterAgendamentosPaciente (private val mList: List<ViewModelAgendamentos
         holder.horaConsulta.text = ItemsViewModel.horaConsulta
         // sets the image to the imageview from our itemHolder class
         holder.imgEdit.setImageResource(ItemsViewModel.edit)
+
+        holder.imgEdit.setOnClickListener {
+            var editAgendMedIntent = Intent(c,EditarAgendamentoMedico::class.java)
+            editAgendMedIntent.putExtra("nomeMedico", ItemsViewModel.medico)
+            c.startActivity(editAgendMedIntent)}
+
     }
 
     // return the number of the items in the list
