@@ -2,36 +2,37 @@ package com.example.myconsultamedica.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myconsultamedica.R
+import com.example.myconsultamedica.ui.model.ConsultaMedicasModel
+import com.google.firebase.database.*
 
 class ConsultasPaciente : AppCompatActivity() {
+
+    private lateinit var dbRef : DatabaseReference
+    private lateinit var recyclerview : RecyclerView
+    private lateinit var data: ArrayList<ConsultaMedicasModel>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consultas_paciente)
 
         // getting the recyclerview by its id
-        val recyclerview = findViewById<RecyclerView>(R.id.rv_consultas_paciente)
+        recyclerview = findViewById(R.id.rv_consultas_paciente)
 
         // this creates a vertical layout Manager
         recyclerview.layoutManager = LinearLayoutManager(this)
-
+        recyclerview.setHasFixedSize(true)
         // ArrayList of class ItemsViewModel
-        val data = ArrayList<ViewModelConsultasPaciente>()
-
-        // This loop will create 20 Views containing
-        // the image with the count of view
-        for (i in 1..21) {
-            data.add(ViewModelConsultasPaciente("Consulta " + i, "Dr "+i,"especialista" +i, "01/01/22","08:00",R.drawable.ic_baseline_assignment_24))
-        }
-
+        data = arrayListOf<ConsultaMedicasModel>()
         // This will pass the ArrayList to our Adapter
-        val adapter = AdapterConsultasPaciente(data)
+//        val adapter = AdapterConsultasPaciente(data)
 
         // Setting the Adapter with the recyclerview
-        recyclerview.adapter = adapter
-
+//        recyclerview.adapter = adapter
+        getConsPacData()
         /**
         val editClick = findViewById<ImageButton>(R.id.rv_medicos_cadastrados)
 
@@ -40,5 +41,33 @@ class ConsultasPaciente : AppCompatActivity() {
         startActivity(intentDadosMed)
         }
          */
+    }
+
+    private fun getConsPacData() {
+        recyclerview.visibility = View.GONE
+        dbRef = FirebaseDatabase.getInstance().getReference("ConsultasMedicas")
+
+        dbRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                data.clear()
+                if (snapshot.exists()) {
+                    for (consPacSnap in snapshot.children) {
+                        val consPacData =
+                            consPacSnap.getValue(ConsultaMedicasModel::class.java)
+                        data.add(consPacData!!)
+                    }
+                    val consPacAdapter = AdapterConsultasPaciente(data)
+                    recyclerview.adapter = consPacAdapter
+
+                    recyclerview.visibility = View.VISIBLE
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
+
     }
 }

@@ -10,8 +10,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myconsultamedica.R
+import com.example.myconsultamedica.ui.model.ConsultaMedicasModel
 
-class AdapterConsultasMedico (private var c:Context, private val mList: List<ViewModelConsultasMedico>) : RecyclerView.Adapter<AdapterConsultasMedico.ViewHolder>() {
+class AdapterConsultasMedico (private var c:Context, private val mList: ArrayList<ConsultaMedicasModel>) : RecyclerView.Adapter<AdapterConsultasMedico.ViewHolder>() {
 
 
     // create new views
@@ -30,11 +31,11 @@ class AdapterConsultasMedico (private var c:Context, private val mList: List<Vie
         val ItemsViewModel = mList[position]
 
         // sets the text to the textview from our itemHolder class
-        holder.consulta.text = ItemsViewModel.consulta
-        holder.dataConsulta.text = ItemsViewModel.dataConsulta
-        holder.horaConsulta.text = ItemsViewModel.horaConsulta
+//        holder.consulta.text = ItemsViewModel.consulta
+        holder.dataConsulta.text = ItemsViewModel.consMedData
+        holder.horaConsulta.text = ItemsViewModel.consMedHora
         // sets the image to the imageview from our itemHolder class
-        holder.imgDelete.setImageResource(ItemsViewModel.delete)
+//        holder.imgDelete.setImageResource(ItemsViewModel.delete)
 
         holder.itemView.setOnClickListener {
             Toast.makeText(c,"${holder.consulta.text} é o numero da consulta", Toast.LENGTH_SHORT).show()

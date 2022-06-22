@@ -2,10 +2,9 @@ package com.example.myconsultamedica.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.*
-import androidx.core.view.get
 import com.example.myconsultamedica.R
+import com.example.myconsultamedica.ui.model.ConsultaMedicasModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -67,6 +66,9 @@ class CadastroConsultaMedico : AppCompatActivity() {
         val consMedConvenio = edtConvenioConsultaMedico.selectedItem.toString()
         val consMedValor = edtValorConsultaMedico.text.toString()
         val consMedValorNao = edtValorNaoConsultaMedico.isChecked.toString()
+        val medId = " "
+        val agendado = false
+
 
         if (consMedData.isEmpty()){
             edtDataConsultaMedico.error = "Por favor insira a Data"
@@ -80,13 +82,13 @@ class CadastroConsultaMedico : AppCompatActivity() {
 
         val consMedId = dbRef.push().key!!
 
-        val consultasMedicas = ConsultaMedicasModel(consMedId, consMedData, consMedHora, consMedTempo, consMedStatus, consMedConvenio, consMedValor, consMedValorNao)
+        val consultasMedicas = ConsultaMedicasModel(consMedId, consMedData, consMedHora, consMedTempo, consMedStatus, consMedConvenio, consMedValor, consMedValorNao, medId, agendado)
 
         dbRef.child(consMedId).setValue(consultasMedicas)
             .addOnCompleteListener {
                 Toast.makeText(this, "Dados salvo com sucesso", Toast.LENGTH_LONG).show()
             }.addOnFailureListener{err ->
-                Toast.makeText(this, "Flaha ${err.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Falha ${err.message}", Toast.LENGTH_LONG).show()
             }
     }
 }

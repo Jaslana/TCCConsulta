@@ -1,7 +1,11 @@
-package com.example.myconsultamedica.ui
+package com.example.myconsultamedica.ui.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
 data class MedicosModel (
-    var medId: String? = null,
+    @PrimaryKey var medId: String? = null,
     var medNome: String? = null,
     var medLoug: String? = null,
     var medNumCasa: String? = null,

@@ -10,8 +10,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myconsultamedica.R
+import com.example.myconsultamedica.ui.model.AgendamentoConsultaModel
 
-class AdapterAgendamentosMedico (private var c: Context, private val mList: List<ViewModelAgendamentosMedico>) : RecyclerView.Adapter<AdapterAgendamentosMedico.ViewHolder>() {
+class AdapterAgendamentosMedico (private var c: Context, private val mList: ArrayList<AgendamentoConsultaModel>) : RecyclerView.Adapter<AdapterAgendamentosMedico.ViewHolder>() {
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,18 +30,16 @@ class AdapterAgendamentosMedico (private var c: Context, private val mList: List
         val ItemsViewModel = mList[position]
 
         // sets the text to the textview from our itemHolder class
-        holder.consulta.text = ItemsViewModel.consulta
-        holder.paciente.text = ItemsViewModel.paciente
-        holder.dataConsulta.text = ItemsViewModel.dataConsulta
-        holder.horaConsulta.text = ItemsViewModel.horaConsulta
+//        holder.consulta.text = ItemsViewModel.consulta
+        holder.paciente.text = ItemsViewModel.pacId
+        holder.dataConsulta.text = ItemsViewModel.consMedData
+        holder.horaConsulta.text = ItemsViewModel.consMedHora
         // sets the image to the imageview from our itemHolder class
-        holder.imgEdit.setImageResource(ItemsViewModel.edit)
-
 
 
         holder.imgEdit.setOnClickListener {
         var editAgendMedIntent = Intent(c,EditarAgendamentoMedico::class.java)
-            editAgendMedIntent.putExtra("nomePaciente", ItemsViewModel.paciente)
+            editAgendMedIntent.putExtra("nomePaciente", ItemsViewModel.pacId)
             c.startActivity(editAgendMedIntent)}
 
     }

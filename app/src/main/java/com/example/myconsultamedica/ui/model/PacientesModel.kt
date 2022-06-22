@@ -1,8 +1,12 @@
-package com.example.myconsultamedica.ui
+package com.example.myconsultamedica.ui.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
 data class PacientesModel (
 
-    var pacId: String? = null,
+    @PrimaryKey var pacId: String? = null,
     var pacNome: String? = null,
     var pacDataNasc: String? = null,
     var pacFone: String? = null,
@@ -11,4 +15,4 @@ data class PacientesModel (
     var pacSenha: String? = null,
     var pacSenhaConf: String? = null,
 
-)
+    )
