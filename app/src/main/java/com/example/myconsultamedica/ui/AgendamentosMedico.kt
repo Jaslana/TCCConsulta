@@ -31,32 +31,12 @@ class AgendamentosMedico : AppCompatActivity() {
 
         getAgenMedico()
 
-        // This loop will create 20 Views containing
-        // the image with the count of view
-//        for (i in 1..21) {
-//            data.add(ViewModelAgendamentosMedico("Consulta " + i, "Paciente " + i, "01/01/22","08:00", R.drawable.ic_baseline_edit_24))
-//        }
-//
-//        // This will pass the ArrayList to our Adapter
-        val adapter = AdapterAgendamentosMedico(this,data)
-//
-//        // Setting the Adapter with the recyclerview
-        recyclerview.adapter = adapter
-
-        /**
-        val editClick = findViewById<ImageButton>(R.id.rv_medicos_cadastrados)
-
-        editClick.setOnClickListener {
-        val intentDadosMed = Intent(this, Dados_medico::class.java)
-        startActivity(intentDadosMed)
-        }
-         */
     }
 
     private fun getAgenMedico() {
         recyclerview.visibility = View.GONE
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Agendamentos")
+        dbRef = FirebaseDatabase.getInstance().getReference("AdendamentosConsultas")
 
         dbRef.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -66,10 +46,10 @@ class AgendamentosMedico : AppCompatActivity() {
                         val ageMedData = dataSnap.getValue(AgendamentoConsultaModel::class.java)
                         data.add(ageMedData!!)
                     }
-//                    val adapter = AdapterAgendamentosMedico(this,data)
-//                    recyclerview.adapter = adapter
-//
-//                    recyclerview.visibility = View.VISIBLE
+                    val adapter = AdapterAgendamentosMedico(this@AgendamentosMedico,data)
+                    recyclerview.adapter = adapter
+
+                    recyclerview.visibility = View.VISIBLE
                 }
             }
 

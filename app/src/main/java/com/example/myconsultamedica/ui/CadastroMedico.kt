@@ -120,5 +120,6 @@ class CadastroMedico : AppCompatActivity() {
             }.addOnFailureListener{err ->
                 Toast.makeText(this, "Flaha ${err.message}", Toast.LENGTH_LONG).show()
             }
+
     }
 }

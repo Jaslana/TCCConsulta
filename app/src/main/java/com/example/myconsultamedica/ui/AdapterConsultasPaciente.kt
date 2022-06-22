@@ -10,11 +10,15 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myconsultamedica.R
+import com.example.myconsultamedica.ui.model.AgendamentoConsultaModel
 import com.example.myconsultamedica.ui.model.ConsultaMedicasModel
+import com.example.myconsultamedica.ui.model.MedicosModel
 import com.google.android.material.tabs.TabLayout
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class AdapterConsultasPaciente (private val mList: ArrayList<ConsultaMedicasModel>) : RecyclerView.Adapter<AdapterConsultasPaciente.ViewHolder>() {
-
+    private lateinit var dbRef : DatabaseReference
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // inflates the card_view_design view
@@ -40,6 +44,17 @@ class AdapterConsultasPaciente (private val mList: ArrayList<ConsultaMedicasMode
         holder.imgAgendar.setImageResource(itemsViewModel.botaoAgend)
 
         holder.imgAgendar.setOnClickListener(){
+            //pegar dados da consulta
+            val dadosConsulta = itemsViewModel;
+            //criar agendamento
+            val idPac = "Capturar da Sessão"
+            val cadastroAgendamentos =  CadastroAgendamentos()
+            val agendamento = AgendamentoConsultaModel(dadosConsulta.consMedId,dadosConsulta.consMedData,dadosConsulta.consMedHora, dadosConsulta.consMedTempo, dadosConsulta.consMedStatus, dadosConsulta.consMedConvenio, dadosConsulta.consMedValor,dadosConsulta.consMedValorNao,dadosConsulta.consMedId,idPac)
+
+            cadastroAgendamentos.onCreate(agendamento)
+
+            dbRef.child("ConsultasMedicas").child(itemsViewModel.consMedId.toString()).child("agendado").setValue(true)
+
            Log.e(TAG, "Deu certo")
         }
     }
